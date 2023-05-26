@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: skyblue;
+}
+
+.box {
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    margin: 150px 540px;
+    position:relative;
+}
+
+.ball{
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    background-color: black;
+    position: absolute;
+    top: 78px;
+    left: 30px;
+    animation: ball 2s ease-in-out infinite;
+}
+
+@keyframes ball
+{
+   0%
+   {
+     left: 30px;
+   }
+   50%
+   {
+    left: 450px;
+   }
+   100%
+   {
+    left: 30px;
+   }
+}
+
+.boxone {
+    width: 30px;
+    height: 95px;
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    animation: top 2s ease-in-out infinite;
+}
+
+@keyframes top
+{
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 105px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+.boxtwo {
+    width: 30px;
+    height: 95px;
+    background-color: black;
+    position: absolute;
+    top: 105px;
+    left: 470px;
+    animation: down 2s ease-in-out infinite;
+}
+
+@keyframes down
+{
+    0%{
+        top: 105px;
+    }
+    50%
+    {
+        top:0;
+    }
+    100%
+    {
+        top: 105px;
+    }
+}

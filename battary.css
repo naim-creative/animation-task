@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.battary{
+    border: 10px solid yellow;
+    width: 300px;
+    height: 200px;
+    margin: 30px 0px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.battaryone {
+    width:100px;
+    height:163px;
+    padding:10px;
+    background-color: yellow;
+    margin: 10px;
+    animation: squre 2s ease-in-out infinite;
+    position:absolute;
+}
+
+@keyframes squre{
+    0%
+    {
+        width: 100px;
+    }
+    
+    50%
+    {
+        width: 150px; 
+    }
+
+    75%
+    {
+        width: 200px; 
+    }
+
+    100%
+    {
+        width: 250px; 
+    }
+    
+}
+
+.battarytwo{
+    width:20px;
+    height:40px;
+    background-color: yellow;
+}

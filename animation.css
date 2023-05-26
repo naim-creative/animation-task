@@ -1,0 +1,189 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.circle{
+    position: relative;
+    width: 100%;
+    
+}
+
+.circleone{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: tomato;
+    animation: face 5s ease-in-out 1;
+    position: absolute;
+    margin: 0px 0px 40px 0px;
+}
+
+@keyframes face
+{
+    0%
+    {
+      transform: rotate(0deg);
+      top: 0;
+      left:0;
+    }
+
+    50%{
+      transform: rotate(180deg);
+      top: 0;
+      left:calc(100% - 200px);
+    }
+
+    100%{
+      transform: rotate(0deg);
+      top: 0;
+      left:0;
+    }
+}
+
+.flex{
+  display: flex;
+  align-items:end;
+  justify-content: space-between;
+  position: relative;  
+}
+
+.eyeone {
+  border-top: 2px solid black;
+  width: 30px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 10px 0px;
+  position: absolute;
+  top: 30px;
+  left: 125px;
+  animation: winkeyebrow 2s 5s ease-in-out 1;
+}
+
+@keyframes winkeyebrow
+{
+  0%
+  {
+    border-radius: 50%;
+    top: 30px;
+  }
+
+  50%{
+    border-radius: 0%;
+    top: 60px;
+    }
+
+  100%{
+    border-radius: 50%;
+    top: 30px;
+  }
+}
+
+.eyetwo {
+  border-top: 2px solid black;
+  width: 30px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 10px 0px;
+  position: absolute;
+  top: 30px;
+  left: 45px;
+}
+
+.circletwos{
+    width: 30px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    overflow: hidden;
+    animation: wink 2s 5s ease-in-out 1;
+}
+
+@keyframes wink{
+  0%
+  {
+    border-radius: 50%;
+    height: 50px;
+    top: 30px;
+  }
+
+  50%{
+    border-radius: 0%;
+    height: 0px;
+    top: 45px;
+  }
+
+  100%{
+    border-radius: 50%;
+    height: 50px;
+    top: 30px;
+  }
+}
+
+.circletwo{
+  width: 30px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+.inone{
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
+  background-color: black;
+  margin:25px 10px 0px 10px;
+}
+
+.inones{
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
+  background-color: black;
+  margin:25px 10px 0px 10px;
+}
+
+.circlethree {
+  width: 10px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  top: 85px;
+  left: 95px;
+}
+
+.circlefour {
+  width: 50px;
+  height: 30px;
+  border-radius: 50%;
+  border-bottom: 2px solid black;
+  position: absolute;
+  top: 130px;
+  left: 75px;
+  animation: mouth 1s 7s;
+}
+
+@keyframes mouth{
+  0%
+  {
+   border-radius: 50%;
+   width: 50px;
+  }
+
+  50%
+  {
+   width: 0px;
+     
+  }
+
+  100%
+  {
+   border-radius: 50%;
+   width: 50px;
+   
+  }
+}
